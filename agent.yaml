@@ -1,0 +1,17 @@
+agentName: diceagent
+image: localhost:5001/diceagent:latest
+language: python
+framework: adk
+modelProvider: gemini
+modelName: gemini-2.0-flash
+description: ""
+mcpServers:
+    - type: registry
+      name: echo-mcp-server
+      env:
+        - MCP_TRANSPORT_MODE=http
+        - HOST=0.0.0.0
+      registryURL: http://34.48.164.57:8080/
+      registryServerName: pmuir/my-mcp-server
+      registryServerVersion: 0.1.0
+updatedAt: 2026-02-03T07:42:42.795768-05:00
